@@ -190,12 +190,12 @@ export default function App() {
             </p>
 
             {/* Ebook Mockup Visual Package */}
-            <div className="relative h-[250px] xs:h-[280px] sm:h-[350px] md:h-[400px] w-full max-w-xl mx-auto mt-12 mb-8 flex items-center justify-center overflow-visible select-none px-4">
+            <div className="relative h-[155px] xs:h-[185px] sm:h-[250px] md:h-[300px] w-full max-w-xl mx-auto mt-8 mb-6 flex items-center justify-center overflow-visible select-none px-4">
               {/* Soft glow background */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/10 to-amber-500/10 blur-[60px] md:blur-[80px] rounded-full pointer-events-none -z-10 w-[80%] h-[80%] mx-auto my-auto" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/10 to-amber-500/10 blur-[50px] md:blur-[70px] rounded-full pointer-events-none -z-10 w-[80%] h-[80%] mx-auto my-auto" />
 
               {/* Pack badge */}
-              <div className="absolute top-[5%] right-0 sm:right-[15%] md:right-[5%] bg-amber-400 text-slate-900 border-2 border-slate-900 font-black text-[10px] md:text-xs px-2.5 py-1.5 rounded-xl shadow-lg z-40 rotate-[15deg] uppercase flex flex-col items-center tracking-wider shrink-0 leading-tight">
+              <div className="absolute top-0 -mt-3 left-1/2 ml-[35px] xs:ml-[42px] sm:ml-[55px] md:ml-[65px] bg-amber-400 text-slate-900 border-2 border-slate-900 font-black text-[10px] md:text-xs px-2.5 py-1.5 rounded-xl shadow-lg z-40 rotate-[15deg] uppercase flex flex-col items-center tracking-wider shrink-0 leading-tight">
                 <span className="text-[8px] md:text-[9px] opacity-80">SISTEMA</span>
                 <span>COMPLETO</span>
               </div>
@@ -264,19 +264,18 @@ export default function App() {
             {/* Main CTA Button & Trust Badges */}
             <div className="mt-10 flex flex-col items-center justify-center">
               <a 
-                href="https://pay.hotmart.com/A104943855R" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+                href="#oferta" 
                 className="w-full sm:w-auto inline-block select-none"
-                onClick={() => {
-                  if (window.fbq) window.fbq('track', 'InitiateCheckout', { content_name: 'Sistema Alimentación Familiar', value: 9.79, currency: 'USD' });
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
                 <button 
                   className={cn(
                     "w-full sm:w-auto px-10 py-5 text-lg md:text-xl font-extrabold uppercase tracking-wider rounded-full text-white",
-                    "bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-600 hover:to-rose-600",
-                    "shadow-xl shadow-rose-500/30 active:scale-95 transition-all duration-300",
+                    "bg-gradient-to-r from-emerald-500 to-brand-green hover:from-emerald-600 hover:to-brand-dark",
+                    "shadow-xl shadow-brand-green/30 active:scale-95 transition-all duration-300",
                     "flex items-center justify-center gap-3 cursor-pointer group"
                   )}
                 >
@@ -479,13 +478,13 @@ export default function App() {
               text: "Gracias a estas recetas, mis hijos ahora me piden brócoli en lugar de papas fritas. ¡No lo podía creer!", 
               author: "María González", 
               role: "Madre de 3 niños",
-              img: "https://i.imgur.com/h1DzofW.png"
+              img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=120&h=120&fit=crop"
             },
             { 
               text: "En 2 meses he ahorrado más de $200 en comida chatarra. Las recetas son deliciosas y súper fáciles.", 
               author: "Carmen Rodríguez", 
               role: "Mamá trabajadora",
-              img: "https://i.imgur.com/LEVGZai.png"
+              img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop"
             },
             { 
               text: "Antes era un estrés pensar qué cocinar todos los días y mis hijos rechazaban todo. Con este sistema me organicé y ahora comen mucho mejor sin pelear.", 
@@ -723,70 +722,6 @@ export default function App() {
           </div>
         </div>
       </Section>
-
-      {/* 12. CTA #1 */}
-      <Section className="bg-brand-green py-20">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-5xl mb-4">🔥 OFERTA ESPECIAL DE LANZAMIENTO:</h2>
-          <p className="text-2xl mb-12 opacity-90">TODO EL SISTEMA COMPLETO POR SOLO:</p>
-          
-          <div className="mb-12">
-            <span className="text-8xl md:text-9xl font-black block mb-2">$9.79 USD</span>
-            <span className="text-2xl line-through opacity-50">$67.00 USD</span>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 text-left max-w-2xl mx-auto">
-            {[
-              "750+ Recetas Saludables",
-              "7 Guías Especializadas",
-              "3 Bonos Exclusivos",
-              "Sistema de Planificación",
-              "30 Días de Garantía"
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-2 font-bold">
-                <CheckCircle2 className="w-5 h-5 text-brand-orange" />
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <div className="mb-12 max-w-lg mx-auto bg-white/10 p-6 rounded-2xl border border-white/20 backdrop-blur-sm">
-            <div className="flex justify-center gap-1 mb-3">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-brand-orange text-brand-orange" />)}
-            </div>
-            <p className="text-lg italic mb-6">"Gastaba mucho en comida hecha porque no sabía qué preparar. Ahora tengo opciones fáciles y ahorro un montón. Además, a mis hijos les gusta."</p>
-            <div className="flex items-center justify-center gap-3">
-              <img 
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" 
-                alt="Mariana" 
-                className="w-10 h-10 rounded-full border-2 border-brand-orange"
-                referrerPolicy="no-referrer"
-              />
-              <p className="font-bold">Mariana</p>
-            </div>
-          </div>
-
-          <a 
-            href="https://pay.hotmart.com/A104943855R" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="block w-full md:w-auto mx-auto"
-            onClick={() => {
-              if (window.fbq) window.fbq('track', 'InitiateCheckout', { content_name: 'Sistema Alimentación Familiar', value: 9.79, currency: 'USD' });
-            }}
-          >
-            <Button variant="secondary" size="xl" className="w-full group">
-              <ShoppingCart className="w-6 h-6 group-hover:scale-110 transition-transform" />
-              SÍ, QUIERO ALIMENTAR MEJOR A MI FAMILIA
-            </Button>
-          </a>
-          
-          <p className="mt-8 text-lg font-medium opacity-80">
-            💡 Pago único - Acceso inmediato - Sin mensualidades
-          </p>
-        </div>
-      </Section>
-
       {/* 13. FAQ */}
       <Section>
         <div className="max-w-3xl mx-auto">
@@ -913,7 +848,7 @@ export default function App() {
       </Section>
 
       {/* 17. CTA Final + Close */}
-      <Section className="bg-gradient-to-b from-white to-brand-green-light/30">
+      <Section id="oferta" className="bg-gradient-to-b from-white to-brand-green-light/30">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl mb-12">🌟 TU DECISIÓN DE HOY CAMBIA EL FUTURO DE TU FAMILIA</h2>
           
@@ -937,6 +872,25 @@ export default function App() {
                   <span className="font-bold text-slate-700">{item}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Testimonial de Mariana integrado en fondo suave */}
+            <div className="mb-12 max-w-xl mx-auto bg-slate-50/80 p-6 rounded-2xl border border-slate-100 shadow-sm">
+              <div className="flex justify-center gap-1 mb-3">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-brand-orange text-brand-orange" />)}
+              </div>
+              <p className="text-slate-600 italic mb-4 text-base md:text-lg">
+                "Gastaba mucho en comida hecha porque no sabía qué preparar. Ahora tengo opciones fáciles y ahorro un montón. Además, a mis hijos les gusta."
+              </p>
+              <div className="flex items-center justify-center gap-3">
+                <img 
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" 
+                  alt="Mariana" 
+                  className="w-10 h-10 rounded-full border-2 border-brand-orange"
+                  referrerPolicy="no-referrer"
+                />
+                <p className="font-bold text-slate-800 text-sm">Mariana</p>
+              </div>
             </div>
 
             <div className="mb-12">
