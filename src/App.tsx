@@ -186,7 +186,7 @@ export default function App() {
               Organiza las comidas de toda tu familia sin estrés con recetas saludables, rápidas y fáciles de preparar.
             </h1>
             <p className="text-xl md:text-2xl text-slate-900 font-bold max-w-4xl mx-auto leading-relaxed">
-              Accede a un sistema práctico con más de 750 recetas organizadas para ahorrar tiempo, dejar de improvisar y alimentar mejor a tu familia todos los días.
+              Accede a un sistema práctico para organizar comidas saludables, reducir el estrés diario y simplificar la alimentación de tu familia con recetas fáciles, snacks y estructuras listas para usar.
             </p>
 
             {/* Ebook Mockup Visual Package */}
@@ -205,7 +205,7 @@ export default function App() {
                 <div className="relative overflow-hidden rounded-r-md">
                   <img 
                     src="https://i.imgur.com/PO8gJCm.png" 
-                    alt="Manual de Desayunos" 
+                    alt="Guía Práctica de Desayunos" 
                     className="w-full h-auto object-cover" 
                     referrerPolicy="no-referrer"
                   />
@@ -247,14 +247,10 @@ export default function App() {
                 <div className="relative overflow-hidden rounded-r-md">
                   <img 
                     src="https://i.imgur.com/yMPVzhg.jpeg" 
-                    alt="La Biblia de la Cocina Saludable Familiar" 
+                    alt="Guía Práctica de Alimentación Familiar" 
                     className="w-full h-auto object-cover" 
                     referrerPolicy="no-referrer"
                   />
-                  {/* 750+ Recetas floating tag on the hero book */}
-                  <div className="absolute top-1 right-1 bg-brand-orange text-white text-[7px] md:text-[9px] font-black px-1.5 py-0.5 rounded shadow z-40 transform rotate-12">
-                    750+ RECETAS
-                  </div>
                   {/* Book spine shadow overlay */}
                   <div className="absolute top-0 left-0 w-2 md:w-3.5 h-full bg-gradient-to-r from-black/30 via-white/10 to-transparent" />
                 </div>
@@ -284,7 +280,7 @@ export default function App() {
                 </button>
               </a>
               <p className="mt-4 text-xs md:text-sm font-semibold text-slate-500 tracking-wide">
-                Acceso inmediato • Más de 750 recetas • Garantía de 30 días
+                Acceso inmediato • Garantía de 30 días
               </p>
             </div>
           </motion.div>
@@ -319,7 +315,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-5xl mb-6">Presentamos el Sistema de Alimentación Familiar Saludable:</h2>
           <p className="text-xl text-slate-600">
-            El único método que combina <strong className="text-brand-green">750+ recetas probadas</strong> con un <strong className="text-brand-green">sistema de planificación semanal</strong> que elimina para siempre la pregunta "¿qué cocino hoy?"
+            Un método práctico que combina <strong className="text-brand-green">recetas simples</strong>, snacks, <strong className="text-brand-green">combinaciones inteligentes</strong> y <strong className="text-brand-green">planificación semanal</strong> para ayudarte a dejar de improvisar y simplificar las comidas de toda tu familia.
           </p>
         </div>
         
@@ -573,38 +569,38 @@ export default function App() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { 
-              title: "La Biblia de la Cocina Saludable Familiar", 
-              desc: "750+ recetas categorizadas por desayunos, almuerzos, cenas y snacks. Incluye tiempos y tips para niños.", 
+              title: "Guía Práctica de Alimentación Familiar", 
+              desc: "Método práctico de alimentación saludable familiar con recetas rápidas, estructuras fáciles, snacks, planificación semanal y combinaciones inteligentes para ayudarte a organizar tus comidas sin estrés.", 
               image: "https://i.imgur.com/yMPVzhg.jpeg",
               color: "bg-emerald-500"
             },
             { 
-              title: "Mañanas Nutritivas: Manual de Desayunos", 
-              desc: "135 recetas de desayunos que se preparan en menos de 15 minutos. ¡Energía pura para el día!", 
+              title: "Mañanas Nutritivas: Guía Práctica de Desayunos", 
+              desc: "135 ideas de desayunos rápidos entre recetas simples, smoothies y combinaciones saludables listas para ayudarte a comenzar el día con más energía y menos estrés.", 
               image: "https://i.imgur.com/PO8gJCm.png",
               color: "bg-amber-500"
             },
             { 
-              title: "Mediodías Perfectos: Almuerzos Balanceados", 
-              desc: "226 recetas para almuerzos nutritivos. Incluye opciones para llevar al trabajo y fin de semana.", 
+              title: "Mediodías Perfectos: Guía Práctica de Almuerzos Balanceados", 
+              desc: "226 ideas de almuerzos saludables entre recetas rápidas, bowls, combinaciones simples y opciones prácticas para el trabajo, la semana y el día a día familiar.", 
               image: "https://i.imgur.com/HiO8hd4.png",
               color: "bg-blue-500"
             },
             { 
               title: "Noches Ligeras: Cenas Sin Complicaciones", 
-              desc: "60 recetas de cenas ligeras pero satisfactorias. Perfectas para terminar el día sin pesadez.", 
+              desc: "60 ideas de cenas ligeras, rápidas y fáciles de preparar para terminar el día con comidas simples, prácticas y satisfactorias.", 
               image: "https://i.imgur.com/Pbcaslj.png",
               color: "bg-indigo-500"
             },
             { 
-              title: "Poder Verde: Batidos y Smoothies", 
-              desc: "100 recetas de batidos energizantes. ¡La manera más fácil de consumir vitaminas!", 
+              title: "Poder Verde: Guía de Batidos y Smoothies", 
+              desc: "Opciones rápidas y fáciles para preparar bebidas nutritivas que te ayuden a sumar variedad y practicidad a tu alimentación diaria.", 
               icon: <Leaf className="w-10 h-10" />,
               color: "bg-green-500"
             },
             { 
               title: "Picoteos Inteligentes", 
-              desc: "40 opciones de snacks saludables. Desde barritas caseras hasta dips nutritivos.", 
+              desc: "Ideas prácticas de snacks saludables para ayudarte a evitar improvisaciones y organizar mejor las meriendas y colaciones familiares.", 
               icon: <Apple className="w-10 h-10" />,
               color: "bg-orange-500"
             }
@@ -661,19 +657,19 @@ export default function App() {
             { 
               title: "Mini Chef Saludable", 
               value: "$29 USD", 
-              desc: "55 meriendas que tus hijos amarán. Diseñadas para paladares exigentes.",
+              desc: "55 meriendas prácticas, nutritivas y divertidas pensadas para ayudar a los niños a disfrutar opciones más saludables en el día a día.",
               icon: <Utensils className="w-8 h-8" />
             },
             { 
-              title: "Mamá Zen: Bienestar Sin Tiempo", 
+              title: "Mamá Zen: Bienestar para Madres Ocupadas", 
               value: "$19 USD", 
-              desc: "Guía de autocuidado. 15 técnicas de relajación y smoothies energizantes.",
+              desc: "Guía práctica de bienestar y autocuidado con hábitos simples, micro-organización y herramientas realistas para ayudarte a reducir el estrés y recuperar equilibrio en tu día a día.",
               icon: <Zap className="w-8 h-8" />
             },
             { 
               title: "Barras Caseras de Energía Natural", 
               value: "$15 USD", 
-              desc: "11 recetas de barras energéticas caseras. Ahorra dinero y come natural.",
+              desc: "11 recetas simples de barras caseras para preparar snacks prácticos, económicos y más naturales para toda la familia.",
               icon: <Apple className="w-8 h-8" />
             }
           ].map((item, i) => (
@@ -697,10 +693,10 @@ export default function App() {
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
             <div className="p-8 space-y-4">
               {[
-                { name: "Biblia de Cocina Saludable", price: "$25 USD" },
-                { name: "Manual de Desayunos", price: "$7 USD" },
+                { name: "Guía Práctica de Alimentación Familiar", price: "$25 USD" },
+                { name: "Guía Práctica de Desayunos", price: "$7 USD" },
                 { name: "Guía de Almuerzos", price: "$10 USD" },
-                { name: "Recetas de Cenas", price: "$5 USD" },
+                { name: "Cenas Sin Complicaciones", price: "$5 USD" },
                 { name: "Batidos y Smoothies", price: "$5 USD" },
                 { name: "Snacks Saludables", price: "$5 USD" },
                 { name: "Organizador Semanal", price: "$5 USD" },
@@ -729,20 +725,20 @@ export default function App() {
           <div className="space-y-2">
             {[
               { 
-                q: "¿Las recetas son realmente fáciles de hacer?", 
-                a: "Sí, todas las recetas están diseñadas para completarse en 30 minutos o menos, con ingredientes que encuentras en cualquier supermercado común." 
+                q: "¿El contenido es realmente fácil de aplicar?", 
+                a: "Sí. Todo el sistema está diseñado para simplificar la alimentación familiar con recetas rápidas, ideas prácticas, snacks y estructuras fáciles de usar en el día a día, utilizando ingredientes simples y accesibles." 
               },
               { 
                 q: "¿Qué pasa si mis hijos son muy exigentes?", 
-                a: "El sistema incluye técnicas probadas para hacer que los niños prueben nuevos alimentos, además del bono 'Mini Chef Saludable' con 55 recetas diseñadas especialmente para paladares infantiles." 
+                a: "El sistema incluye ideas prácticas para facilitar hábitos más saludables en niños, además del bono “Mini Chef Saludable” con meriendas simples, nutritivas y pensadas para paladares infantiles." 
               },
               { 
                 q: "¿Necesito ingredientes especiales o caros?", 
-                a: "No. Todas las recetas usan ingredientes accesibles y económicos que encuentras en cualquier tienda de barrio o supermercado." 
+                a: "No. Todo el contenido utiliza ingredientes simples, accesibles y fáciles de encontrar en supermercados o tiendas comunes." 
               },
               { 
                 q: "¿Cómo recibo el material?", 
-                a: "Inmediatamente después de tu compra recibes acceso a una plataforma digital donde puedes descargar todo el contenido en formato PDF de alta calidad." 
+                a: "Inmediatamente después de tu compra recibirás acceso a una plataforma digital donde podrás descargar todo el contenido en formato PDF." 
               },
               { 
                 q: "¿Hay algún costo adicional?", 
