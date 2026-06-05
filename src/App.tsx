@@ -183,7 +183,7 @@ export default function App() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 text-brand-green">
-              Organiza las comidas de toda tu familia sin estrés con recetas saludables, rápidas y fáciles de preparar.
+              Organiza las comidas de toda tu familia sin estrés con un sistema práctico y fácil de aplicar.
             </h1>
             <p className="text-xl md:text-2xl text-slate-900 font-bold max-w-4xl mx-auto leading-relaxed">
               Accede a un sistema práctico para organizar comidas saludables, reducir el estrés diario y simplificar la alimentación de tu familia con recetas fáciles, snacks y estructuras listas para usar.
