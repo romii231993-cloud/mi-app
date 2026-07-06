@@ -183,7 +183,7 @@ export default function App() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 text-brand-green">
-              Organiza las comidas de toda tu familia sin estrés con un sistema práctico y fácil de aplicar.
+              Organiza las comidas de toda tu familia sin estrés con recetas saludables, rápidas y fáciles de preparar.
             </h1>
             <p className="text-xl md:text-2xl text-slate-900 font-bold max-w-4xl mx-auto leading-relaxed">
               Accede a un sistema práctico para organizar comidas saludables, reducir el estrés diario y simplificar la alimentación de tu familia con recetas fáciles, snacks y estructuras listas para usar.
@@ -777,12 +777,11 @@ export default function App() {
             <p className="text-2xl font-black text-brand-green">Tú mereces tranquilidad y tiempo libre.</p>
           </div>
           <a 
-            href="https://pay.hotmart.com/A104943855R" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+            href="#acceso-inmediato" 
             className="block w-full md:w-auto mx-auto"
-            onClick={() => {
-              if (window.fbq) window.fbq('track', 'InitiateCheckout', { content_name: 'Sistema Alimentación Familiar', value: 9.79, currency: 'USD' });
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('acceso-inmediato')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             <Button variant="primary" size="xl" className="w-full">
@@ -896,10 +895,11 @@ export default function App() {
             </div>
 
             <a 
-              href="https://pay.hotmart.com/A104943855R" 
+              id="acceso-inmediato"
+              href="https://pay.hotmart.com/A104943855R?off=5d6zhoak&checkoutMode=10" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="block w-full"
+              className="block w-full scroll-mt-24"
               onClick={() => {
                 if (window.fbq) window.fbq('track', 'InitiateCheckout', { content_name: 'Sistema Alimentación Familiar', value: 9.79, currency: 'USD' });
               }}
